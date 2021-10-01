@@ -9,6 +9,10 @@ The goal of this project is to test a possibility to replace dynamic system simu
 
 To implement this idea, GAN model is suggested. If we are given an intial state of the system, control input signals and we know the "ground true" measured from some tests. The Generator will then generate an output and Discriminator should detect faulty vs true output.
 
+# Verification
+
+As a simplest case we can implement the GAN for a linear differential equation of first order, where we can analytically derive general solution and generate large amount of "test measurments" for training.
+
 # Possible risks and bottlenecks
 
 The GAN model will require large amounts of training data. Training time increases rapidly with increased complexity and non-linearity of the model. If input data is very sparce, phase space of the Generator will differ much from the phase space of the original dynamic system. Some kind of augmented input will be reqiured.
