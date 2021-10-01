@@ -11,7 +11,9 @@ To implement this idea, GAN model is suggested. If we are given an intial state 
 
 # Verification
 
-As a simplest case we can implement the GAN for a linear differential equation of first order, where we can analytically derive general solution and generate large amount of "test measurments" for training.
+As a simplest case we can implement the GAN for a linear differential equation of first order,  
+![alt text](https://latex.codecogs.com/gif.latex?%5Cdot%7Bx%7D%20&plus;%20Au%28t%29x%28t%29%20%3D%20f%28t%29)  
+where u(t) is known control input, x(t0) = x0 - known initial state, and we can analytically derive general solution and generate large amount of "test measurments" for training.
 
 # Possible risks and bottlenecks
 
